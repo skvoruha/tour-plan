@@ -476,6 +476,10 @@ template {
   color: #333333;
 }
 
+.navbar-bottom__vanishing {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -546,8 +550,80 @@ template {
 }
 
 @media (max-width: 576px) {
+  .navbar__search {
+    height: 30px;
+  }
   .logo {
     width: 99px;
+  }
+  .search__input {
+    width: 300px;
+  }
+  .search__button {
+    width: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    padding-bottom: 68px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+    line-height: 0;
+  }
+  .navbar-menu__item:last-child {
+    margin-bottom: 0;
+  }
+  .navbar__search {
+    display: none;
+  }
+  .navbar__user {
+    display: none;
+  }
+  .navbar-bottom__vanishing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 39px;
+  }
+  .navbar-bottom__user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 31px;
+    margin-bottom: 27px;
+  }
+  .navbar-bottom__search {
+    display: block;
+    width: 82.5%;
+  }
+  .user__name {
+    padding-top: 10px;
+    color: #fff;
+    margin-left: 0;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 /*# sourceMappingURL=style.css.map */
