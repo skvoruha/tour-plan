@@ -380,6 +380,7 @@ template {
 
 .navbar-top__menu-button {
   display: none;
+  outline: none;
 }
 
 .navbar__search {
@@ -518,7 +519,7 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar-search, .navbar-menu, .navbar__user {
+  .navbar-search, .navbar-menu, .navbar__user, .navbar__search {
     display: none;
   }
   .menu-button {
@@ -552,9 +553,6 @@ template {
 @media (max-width: 576px) {
   .navbar__search {
     height: 30px;
-  }
-  .logo {
-    width: 99px;
   }
   .search__input {
     width: 300px;
@@ -624,6 +622,9 @@ template {
   }
   .search__input {
     width: 340px;
+  }
+  .logo {
+    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */
