@@ -577,7 +577,7 @@ template {
 .offer {
   font-size: 10px;
   line-height: 13px;
-  padding: 4px 9px;
+  padding: 3px 10px;
   background-color: #EC1F46;
   border-radius: 3px;
   color: #fff;
@@ -597,11 +597,13 @@ template {
 
 .rating__text {
   font-size: 8px;
+  font-weight: 600;
   line-height: 10px;
 }
 
 .rating__counter {
   font-size: 14px;
+  font-weight: 700;
   line-height: 18px;
 }
 
@@ -679,15 +681,17 @@ template {
     width: 132px;
   }
   .navbar-top {
-    padding-top: 30px;
+    padding-top: 32px;
     padding-bottom: 30px;
   }
   .navbar__search {
     margin-left: auto;
+    margin-right: 73px;
   }
   .navbar-menu {
+    padding: 0 14px;
     padding-top: 22px;
-    padding-bottom: 22px;
+    padding-bottom: 20px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -696,6 +700,10 @@ template {
   .search__input {
     width: 340px;
   }
+}
+
+.slider {
+  width: 702px;
 }
 
 @media (max-width: 768px) {
@@ -736,6 +744,11 @@ template {
     -ms-flex-preferred-size: 13%;
         flex-basis: 13%;
   }
+  .hotel-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -744,6 +757,9 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .hotel-info {
+    padding-bottom: 38px;
   }
   .hotel-info__text {
     width: 100%;
@@ -761,12 +777,34 @@ template {
             order: -1;
     margin-left: 0;
   }
+  .slider {
+    width: 95%;
+  }
+  .swiper-container {
+    height: 98%;
+  }
+  .swiper-slide {
+    height: auto;
+  }
+  .swiper-slide__image {
+    height: 100%;
+  }
 }
 
 @media (max-width: 576px) {
+  body {
+    background-color: #fff;
+  }
+  .hotel {
+    padding-top: 0;
+  }
   .stars {
     -ms-flex-preferred-size: 13%;
         flex-basis: 13%;
+  }
+  .navbar-top {
+    width: 95%;
+    padding: 28px 0;
   }
   .navbar__search {
     height: 30px;
@@ -776,6 +814,13 @@ template {
   }
   .search__button {
     width: 50px;
+  }
+  .stars {
+    margin-top: 2px;
+    margin-right: -9px;
+  }
+  .hotel-description {
+    width: 90%;
   }
 }
 

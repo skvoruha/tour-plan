@@ -8,20 +8,24 @@
     width: 132px
   .navbar
     &-top
-      padding-top: 30px
+      padding-top: 32px
       padding-bottom: 30px
 
     &__search
       margin-left: auto
+      margin-right: 73px
     &-menu
+      padding: 0 14px
       padding-top: 22px
-      padding-bottom: 22px
+      padding-bottom: 20px
       &__link
         font-size: 12px
         line-height: 15px
   .search
     &__input
       width: 340px
+.slider
+  width: 702px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -48,11 +52,14 @@
   .stars
     flex-basis: 13%
   .hotel
+    &-grid
+      display: flex
     &-name
       flex-basis: 100%
     &-wrapper
       justify-content: space-between
     &-info
+      padding-bottom: 38px
       &__text
         width: 100%
       &__name
@@ -63,11 +70,26 @@
       &__offer
         order: -1
         margin-left: 0
-
+  .slider
+    width: 95%
+  .swiper
+    &-container
+      height: 98%
+    &-slide
+      height: auto
+      &__image
+        height: 100%
 @media (max-width: 576px)
+  body
+    background-color: $light
+  .hotel
+    padding-top: 0
   .stars
     flex-basis: 13%
   .navbar
+    &-top
+      width: 95%
+      padding: 28px 0
     &__search
       height: 30px
   .search
@@ -75,6 +97,12 @@
       width: 300px
     &__button
       width: 50px
+  .stars
+    margin-top: 2px
+    margin-right: -9px
+  .hotel
+    &-description
+      width: 90%
 @media (min-width: 320px) and (max-width: 480px)
   .navbar
     &-menu
