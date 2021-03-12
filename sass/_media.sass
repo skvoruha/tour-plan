@@ -25,8 +25,8 @@
       margin-right: 73px
     &-menu
       padding: 0 14px
-      padding-top: 22px
-      padding-bottom: 20px
+      padding-top: 20px
+      padding-bottom: 22px
       &__link
         font-size: 12px
         line-height: 15px
@@ -41,6 +41,7 @@
     margin-top: 0
 
   .hotel
+    padding-bottom: 57px
     &-grid
       flex-direction: column
     &__slider
@@ -49,14 +50,36 @@
       flex-direction: row
     &-slider
       width: 100%
+    &-info
+      padding-bottom: 18px
   .booking
     width: 340px
+    padding: 28px 23px 32px
+    &__pricetag
+      line-height: 34px
+    &__pre
+      &-room
+        font-size: 12px
+        line-height: 14px
+    &__call
+      &-center
+        margin-bottom: 21px
   .map
     width: 340px
   .reviews
     &-slider
+      &__rating
+        margin-left: 6px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+    &-slider
       &__item
         max-width: 580px
+  .newsletter
+    padding: 92px 0 93px 0
+
 @media (max-width: 768px)
   .container,
     max-width: 576px
@@ -109,6 +132,7 @@
       height: 350px
   .booking
     width: 100%
+    margin-bottom: 30px
   .map
     width: 100%
   .swiper
@@ -126,6 +150,8 @@
       align-items: flex-start
   .reviews
     &-slider
+      &__rating
+        margin-left: 0
       &__item
         padding: 0 30px 0 30px
         &::after ,&::before
@@ -150,10 +176,14 @@
     padding-top: 0
   .stars
     flex-basis: 13%
+  .booking
+    margin-bottom: 20px
   .navbar
     &-top
       width: 95%
-      padding: 28px 0
+      padding: 19px 0
+      &__menu-button
+        margin-top: 5px
     &__search
       height: 30px
   .search
@@ -178,8 +208,30 @@
 
   .subscribe
     width: 100%
+  .breadcrumb
+    &-list
+      padding-top: 27px
 
 @media (min-width: 320px) and (max-width: 480px)
+  .hotel
+    padding-bottom: 40px
+    &-slider
+      height: 179px
+      width: 95%
+    &-wrapper
+      margin-top: 7px
+    &-right
+      min-height: 405px
+  .booking
+    width: 95%
+    margin-bottom: 0
+    &__start
+      line-height: 19px
+    &__info
+      margin-right: 2px
+      margin-bottom: 8px
+    &__text
+      line-height: 19px
   .navbar
     &-menu
       display: flex
@@ -222,3 +274,42 @@
     width: 99px
   .stars
     flex-basis: 30%
+  .map
+    height: 173px
+    width: 95%
+  .newsletter
+    &-title
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-size: 30px
+        line-height: 44px
+  .subscribe
+    width: 95%
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+      width: 250px
+      margin: 0 22px 0 15px
+      margin-bottom: 50px
+    &-slider
+      &__text
+        width: 218px
+        font-size: 12px
+        line-height: 19px
+      &__item
+        padding: 0 30px 0 14px
+        margin: 39px auto 0
+      &__button
+        top: 23px
+        &--next
+          left: 67%
+        &--prev
+          left: 38%
+  .subscribe
+    &__button
+      font-size: 12px
+      line-height: 15px
+    &__input
+      padding-left: 19px
