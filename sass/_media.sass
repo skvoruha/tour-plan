@@ -4,6 +4,8 @@
   .slider
     width: 590px
   .hotel
+    &__slider
+      width: 590px
     &-slider
       &__image
         width: 100%
@@ -58,8 +60,10 @@
   .booking
     width: 340px
     padding: 28px 23px 32px
+    &__info
+      margin-right: 0
     &__pricetag
-      line-height: 34px
+      line-height: 32px
     &__pre
       &-room
         font-size: 12px
@@ -67,10 +71,19 @@
     &__call
       &-center
         margin-bottom: 21px
+    &__description
+      margin-left: 9px
   .map
     width: 340px
   .reviews
+    padding-bottom: 60px
     &-slider
+      &__button
+        top: 50%
+        &--prev
+          left: 0
+        &--next
+          right: 0
       &__rating
         margin-left: 6px
     &__title
@@ -80,13 +93,18 @@
     &-slider
       &__item
         max-width: 580px
+
   .newsletter
     padding: 92px 0 93px 0
   .activities
     &-wrapper
       flex-wrap: wrap
     &__card
-
+      margin-bottom: 20px
+  .subscribe
+    &__button
+      font-size: 12px
+      line-height: 15px
   .card
     width: 340px
     height: 250px
@@ -233,7 +251,10 @@
 
 @media (min-width: 320px) and (max-width: 480px)
   .hotel
-    padding-bottom: 40px
+    padding-bottom: 37px
+    &__name
+      line-height: 32px
+      padding-bottom: 40px
     &-slider
       height: 179px
       width: 95%
@@ -241,16 +262,35 @@
       margin-top: 7px
     &-right
       min-height: 405px
+    &-info
+      &__description
+        line-height: 16px
+      &__text
+        max-width: 100%
+
   .booking
+    padding: 25px 21px 26px 23px
     width: 95%
     margin-bottom: 0
     &__start
       line-height: 19px
+      max-width: 100%
     &__info
-      margin-right: 2px
-      margin-bottom: 8px
+      margin-bottom: 10px
     &__text
-      line-height: 19px
+      line-height: 16px
+      margin-top: 7px
+    &__pricetag
+      line-height: 30px
+    &__description
+      margin-left: 8px
+    &__call
+      &-center
+        margin-bottom: 17px
+    &__button
+      min-height: 45px
+    &__number
+      margin-right: 4px
   .navbar
     &-menu
       display: flex
@@ -306,6 +346,7 @@
   .subscribe
     width: 95%
   .reviews
+    padding-bottom: 50px
     &__title
       font-size: 18px
       line-height: 23px
@@ -318,8 +359,9 @@
         font-size: 12px
         line-height: 19px
       &__item
-        padding: 0 30px 0 14px
+        padding: 0 30px 43px 14px
         margin: 39px auto 0
+        background-color: $light
       &__button
         top: 23px
         &--next
@@ -332,3 +374,10 @@
       line-height: 15px
     &__input
       padding-left: 19px
+  .activities
+    &__title
+      margin-bottom: 38px
+      font-size: 18px
+      line-height: 23px
+    &__card
+      width: 95%

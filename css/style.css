@@ -727,6 +727,7 @@ template {
 }
 
 .booking__price {
+  max-width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -737,7 +738,7 @@ template {
 }
 
 .booking__start {
-  max-width: 70%;
+  max-width: 100%;
   font-weight: normal;
   font-size: 10px;
   line-height: 14px;
@@ -930,11 +931,12 @@ template {
 }
 
 .reviews {
+  background-color: #F5FAFE;
   padding: 40px 0 70px 0;
 }
 
 .reviews__title {
-  max-width: 1000px;
+  max-width: 1111px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -988,7 +990,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 46%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1005,12 +1007,12 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../image/arrow-prev-secondary.svg);
-  left: 0;
+  left: 18px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../image/arrow-next-secondary.svg);
-  right: 0;
+  right: 18px;
 }
 
 .reviews-slider__profile {
@@ -1085,6 +1087,7 @@ template {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 57px;
 }
 
@@ -1156,7 +1159,7 @@ template {
   font-size: 12px;
   line-height: 16px;
   color: #fff;
-  padding: 7px 22px;
+  padding: 7px 20px 7px 21px;
   border: none;
   background-color: #EC1F46;
   border-radius: 4px;
@@ -1168,6 +1171,9 @@ template {
     max-width: 960px;
   }
   .slider {
+    width: 590px;
+  }
+  .hotel__slider {
     width: 590px;
   }
   .hotel-slider__image {
@@ -1247,8 +1253,11 @@ template {
     width: 340px;
     padding: 28px 23px 32px;
   }
+  .booking__info {
+    margin-right: 0;
+  }
   .booking__pricetag {
-    line-height: 34px;
+    line-height: 32px;
   }
   .booking__pre-room {
     font-size: 12px;
@@ -1257,8 +1266,23 @@ template {
   .booking__call-center {
     margin-bottom: 21px;
   }
+  .booking__description {
+    margin-left: 9px;
+  }
   .map {
     width: 340px;
+  }
+  .reviews {
+    padding-bottom: 60px;
+  }
+  .reviews-slider__button {
+    top: 50%;
+  }
+  .reviews-slider__button--prev {
+    left: 0;
+  }
+  .reviews-slider__button--next {
+    right: 0;
   }
   .reviews-slider__rating {
     margin-left: 6px;
@@ -1277,6 +1301,13 @@ template {
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .subscribe__button {
+    font-size: 12px;
+    line-height: 15px;
   }
   .card {
     width: 340px;
@@ -1491,6 +1522,10 @@ template {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .hotel {
+    padding-bottom: 37px;
+  }
+  .hotel__name {
+    line-height: 32px;
     padding-bottom: 40px;
   }
   .hotel-slider {
@@ -1503,19 +1538,42 @@ template {
   .hotel-right {
     min-height: 405px;
   }
+  .hotel-info__description {
+    line-height: 16px;
+  }
+  .hotel-info__text {
+    max-width: 100%;
+  }
   .booking {
+    padding: 25px 21px 26px 23px;
     width: 95%;
     margin-bottom: 0;
   }
   .booking__start {
     line-height: 19px;
+    max-width: 100%;
   }
   .booking__info {
-    margin-right: 2px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
   .booking__text {
-    line-height: 19px;
+    line-height: 16px;
+    margin-top: 7px;
+  }
+  .booking__pricetag {
+    line-height: 30px;
+  }
+  .booking__description {
+    margin-left: 8px;
+  }
+  .booking__call-center {
+    margin-bottom: 17px;
+  }
+  .booking__button {
+    min-height: 45px;
+  }
+  .booking__number {
+    margin-right: 4px;
   }
   .navbar-menu {
     display: -webkit-box;
@@ -1602,6 +1660,9 @@ template {
   .subscribe {
     width: 95%;
   }
+  .reviews {
+    padding-bottom: 50px;
+  }
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
@@ -1615,8 +1676,9 @@ template {
     line-height: 19px;
   }
   .reviews-slider__item {
-    padding: 0 30px 0 14px;
+    padding: 0 30px 43px 14px;
     margin: 39px auto 0;
+    background-color: #fff;
   }
   .reviews-slider__button {
     top: 23px;
@@ -1633,6 +1695,14 @@ template {
   }
   .subscribe__input {
     padding-left: 19px;
+  }
+  .activities__title {
+    margin-bottom: 38px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .activities__card {
+    width: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */
