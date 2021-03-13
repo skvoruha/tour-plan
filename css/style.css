@@ -472,6 +472,7 @@ template {
 }
 
 .user__name {
+  max-width: 100px;
   margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
@@ -528,6 +529,7 @@ template {
 }
 
 .hotel-info__offer {
+  max-width: 110px;
   margin-left: 15px;
 }
 
@@ -538,6 +540,10 @@ template {
 
 .hotel-info__description {
   margin: 5px 0;
+}
+
+.hotel-info__text {
+  max-width: 65%;
 }
 
 .hotel-name {
@@ -702,7 +708,7 @@ template {
   border-radius: 8px;
   width: 350px;
   min-height: 210px;
-  padding: 28px 28px 24p;
+  padding: 28px 28px 24px;
 }
 
 .booking__text {
@@ -731,12 +737,14 @@ template {
 }
 
 .booking__start {
+  max-width: 70%;
   font-weight: normal;
   font-size: 10px;
   line-height: 14px;
 }
 
 .booking__pricetag {
+  max-width: 130px;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -744,6 +752,7 @@ template {
 }
 
 .booking__pre-room {
+  max-width: 130px;
   font-size: 12px;
   line-height: 16px;
 }
@@ -766,6 +775,7 @@ template {
 }
 
 .booking__description {
+  max-width: 100px;
   margin-left: 9px;
 }
 
@@ -783,6 +793,7 @@ template {
 }
 
 .booking__heading {
+  max-width: 130px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -807,6 +818,7 @@ template {
 }
 
 .booking__num {
+  max-width: 100px;
   margin-left: 8px;
 }
 
@@ -867,6 +879,7 @@ template {
 }
 
 .newsletter-title {
+  max-width: 350px;
   margin: 0;
   color: #fff;
   font-style: normal;
@@ -906,6 +919,7 @@ template {
 
 .subscribe__button {
   position: absolute;
+  max-width: 120px;
   min-width: 65px;
   right: 0;
   top: 0;
@@ -920,6 +934,7 @@ template {
 }
 
 .reviews__title {
+  max-width: 1000px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -1023,6 +1038,7 @@ template {
 }
 
 .reviews-slider__username {
+  max-width: 130px;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -1032,6 +1048,7 @@ template {
 }
 
 .reviews-slider__date {
+  max-width: 100px;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;

@@ -1,3 +1,12 @@
+$(window).scroll(function(){
+  $('.newsletter').bgscroll({
+    direction: 'top', // направление bottom или top
+    bgpositionx: 50, // x позиция фонового изображения, от 0 до 100, размерность в %, 50 - означает по центру
+    debug: false, // Режим отладки
+    min:0, // минимальное положение (в %) на которое может смещаться фон
+    max:100 // максимальное положение (в %) на которое может смещаться фон
+  });
+ })
 var hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
