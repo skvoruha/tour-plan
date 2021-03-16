@@ -1,0 +1,147 @@
+.packages
+  padding-bottom: 70px
+  &__title
+    margin-top: 40px
+    margin-bottom: 65px
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    justify-items: stretch
+    grid-gap: 30px
+    min-height: 300px
+  &__images
+    width: 366px
+    height: 500px
+  &__offer
+    left: 0
+    position: absolute
+    margin-top: 27px
+    font-style: normal
+    font-weight: 600
+    font-size: 12px
+    line-height: 15px
+    padding: 8px 21px 7px 11px
+    background-color: #EC1F46
+    border-radius: 3px
+    color: #fff
+    &-seconadary
+      margin-top: 26px
+      padding: 4px 9px
+      font-size: 8px
+      line-height: 10px
+  &__card
+    &-images
+      position: relative
+  &-card
+    display: flex
+    flex-direction: column
+    min-height: 500px
+    max-height: 500px
+    position: relative
+    border-radius: 8px
+    overflow: hidden
+    &__main
+      flex-direction: row
+      min-height: 500px
+      max-height: 500px
+      max-width: 730px
+      position: relative
+      border-radius: 8px
+      overflow: hidden
+      grid-column: span 2
+    &__images
+      width: 350px
+      height: 250px
+      object-fit: cover
+    &__seconadary
+      min-height: 250px
+      background-color: $dark
+      color: $light
+      padding: 30px 21px 15px 32px
+  &__seconadary
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-top: 0
+      margin-bottom: 23px
+  &__main
+    &-info
+      color: $light
+      background-color: $dark
+      width: 364px
+      padding: 46px 21px 30px 43px
+  &__stars
+    display: flex
+    height: 8px
+    margin-bottom: 5px
+
+  &__title
+    &-main
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-top: 5px
+      margin-bottom: 27px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 22px
+    margin-bottom: 47px
+  &__price
+    display: flex
+    height: 60px
+  &__pricetag
+    margin-right: 31%
+    width: 30%
+    &-old
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+      margin-bottom: 5px
+    &-sale
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+    &-main
+      margin-left: 2px
+  &__button
+    margin-top: 17px
+    background-color: $primary
+    border-radius: 4px
+    max-height: 40px
+    min-width: 120px
+    color: $light
+    cursor: pointer
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+.per-room
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 12px
+  margin-bottom: 38px
+  margin-left: 4px
+  &__description
+    margin-left: 14px
+  &__text
+    margin-bottom: 11px
+  &__text::last-child
+    margin-bottom: 0
+  &__seconadary
+    margin-bottom: 26px
+    margin-left: 1px

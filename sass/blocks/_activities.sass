@@ -18,7 +18,7 @@
   align-items: flex-start
   padding: 24px 26px
   width: 255px
-  height: 255px
+  min-height: 255px
   border-radius: 6px
   overflow: hidden
   &::before
@@ -41,6 +41,7 @@
     object-fit: cover
     z-index: -2
   &__title
+    width: 200px
     margin-top: auto
     margin-bottom: 18px
     color: $light
@@ -49,6 +50,7 @@
     font-size: 16px
     line-height: 20px
   &__button
+    font-weight: 600
     font-style: normal
     font-weight: 600
     font-size: 12px
