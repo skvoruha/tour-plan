@@ -2508,6 +2508,7 @@ template {
   }
   .navbar-top {
     width: 100%;
+    padding-bottom: 31px;
   }
   .navbar-menu {
     display: -webkit-box;
