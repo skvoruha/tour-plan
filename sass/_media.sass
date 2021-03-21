@@ -442,6 +442,9 @@
         margin-top: 5px
     &__search
       height: 30px
+    &-bottom
+      &--visible
+        top: 68px
   .search
     &__input
       width: 300px
@@ -611,12 +614,7 @@
         line-height: 0
         &:last-child
           margin-bottom: 0
-    &__search
-      display: none
-    &__user
-      display: none
     &-bottom
-      display: none
       &__vanishing
         display: flex
         flex-direction: column
@@ -630,14 +628,20 @@
       &__search
         display: block
         width: 82.5%
+    &__search
+      margin-top: 8px
+      height: 40px
+      margin-bottom: 21px
+
   .user
     &__name
-      padding-top: 10px
       color: $light
       margin-left: 0
   .search
     &__input
-      width: 340px
+      width: 244px
+    &__button
+      width: 26.2%
   .logo
     width: 99px
   .stars
