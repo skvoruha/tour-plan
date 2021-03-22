@@ -1548,6 +1548,14 @@ template {
   margin-bottom: 16px;
 }
 
+.footer__item--mb14 {
+  margin-bottom: 14px;
+}
+
+.footer__item--mb18 {
+  margin-bottom: 18px;
+}
+
 .footer__icon {
   margin-left: 8px;
 }
@@ -1961,7 +1969,7 @@ template {
   }
   .footer__legal {
     grid-column: span 1;
-    margin-left: 21px;
+    margin-left: 23px;
   }
   .footer__additional {
     grid-column: span 1;
@@ -1980,7 +1988,7 @@ template {
     grid-row: 4;
   }
   .footer__title {
-    margin-top: 27px;
+    margin-top: 24px;
   }
   .footer__title--mb-3 {
     margin-top: 37px;
@@ -2012,7 +2020,7 @@ template {
     padding-left: 2px;
   }
   .footer__mark {
-    margin-right: -12px;
+    margin-right: -10px;
   }
   .footer__icon-phone-call {
     margin-left: 5px;
@@ -2339,10 +2347,26 @@ template {
         flex-basis: 72%;
   }
   .footer__mark {
-    -ms-grid-row: 7;
-    grid-row: 7;
+    -ms-grid-row: 6;
+    grid-row: 6;
     -ms-grid-column: 2;
     grid-column: 2;
+  }
+  .footer__bottom {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    width: 100%;
+  }
+  .footer__bottom-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2523,6 +2547,13 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .footer__bottom-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 25%;
+  }
   .footer__mark {
     -ms-grid-row: 8;
     grid-row: 8;
@@ -2531,6 +2562,7 @@ template {
     -ms-grid-column-align: start;
         justify-self: start;
     padding-top: 21px;
+    margin-bottom: 7px;
   }
 }
 
@@ -2885,7 +2917,11 @@ template {
   }
   .footer__bottom-list {
     margin-top: 0;
-    margin-left: -4px;
+    padding-left: 0;
+    margin-left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .footer__listing {
     padding-right: 7px;

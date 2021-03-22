@@ -37,7 +37,7 @@ else if ((isset($_POST['email']))) {
     $title = "Подписка";
     $body = "
     <h2>Проверка в  виде подписки оформлена!</h2>
-    <br>Ваш e-mail был добавлен в базу рассыло, (нет). Если это были не вы,
+    <br>Ваш e-mail был добавлен в базу рассылки, ( на самом деле нет). Если это были не вы,
     пожалуйста, <a href=$back"."unsubscribe.html>кликните сюда.</a>
     ";
 } else {
@@ -74,9 +74,9 @@ try {
 // Проверяем отравленность сообщения
 if ($mail->send()) {
         if ($formActive == 1 ) {
-            header('Location: ../onsubscribe.html');
+            header('Location: onsubscribe.html');
         } else {
-            header('Location: ../thankyou.html');
+            header('Location: thankyou.html');
         }
     } else {
         $result = "error";

@@ -159,7 +159,7 @@
       grid-column: span 1
     &__legal
       grid-column: span 1
-      margin-left: 21px
+      margin-left: 23px
     &__additional
       grid-column: span 1
       margin-left: 10px
@@ -173,7 +173,7 @@
         grid-column: span 5
         grid-row: 4
     &__title
-      margin-top: 27px
+      margin-top: 24px
       &--mb-3
         margin-top: 37px
       &--mb35
@@ -194,7 +194,7 @@
       &-list
         padding-left: 2px
     &__mark
-      margin-right: -12px
+      margin-right: -10px
     &__icon
       &-map-marker
 
@@ -422,8 +422,15 @@
     &__input
       flex-basis: 72%
     &__mark
-      grid-row: 7
+      grid-row: 6
       grid-column: 2
+    &__bottom
+      grid-row: 6
+      grid-column: 1
+      width: 100%
+      &-list
+        display: flex
+        flex-direction: column
 
 @media (max-width: 576px)
   body
@@ -551,11 +558,15 @@
     &__bottom
       grid-row: 8
       grid-column: 1
+      &-list
+        flex-direction: row
+        padding-left: 25%
     &__mark
       grid-row: 8
       grid-column: 1
       justify-self: start
       padding-top: 21px
+      margin-bottom: 7px
 
 @media (min-width: 320px) and (max-width: 480px)
   .container
@@ -820,7 +831,9 @@
       margin-top: 8px
       &-list
         margin-top: 0
-        margin-left: -4px
+        padding-left: 0
+        margin-left: 0
+        justify-content: flex-start
     &__listing
       padding-right: 7px
     &__form
