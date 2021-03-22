@@ -55,7 +55,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'skvoruha3@gmail.com '; // Логин на почте
-    $mail->Password   = 'пусто'; // Пароль на почте
+    $mail->Password   = 'grisha2016'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('skvoruha3@gmail.com', 'Tour Plan'); // Адрес самой почты и имя отправителя
