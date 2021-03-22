@@ -2079,6 +2079,7 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow-y: auto;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;

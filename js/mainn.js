@@ -83,9 +83,20 @@ $(document).ready(function(){
           }))
 
       }
+  var oneMoblie = 0
+
   var menuButton = $(".menu-button");
   menuButton.on('click', function(){
     $(".navbar-bottom").toggleClass('navbar-bottom--visible')
+    oneMoblie++;
+
+    if(oneMoblie == 1){
+      $('html, body').css('overflow', 'hidden');
+    }else
+    {
+      $('html, body').css('overflow', '');
+      oneMoblie = 0;
+    }
   });
 
   var modalButton = $('[data-toggle=modal]');
