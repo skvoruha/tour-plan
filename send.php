@@ -6,17 +6,21 @@ require 'phpmailer/Exception.php';
 
 $back = $_SERVER['HTTP_REFERER'];
 
-if ((isset($_POST['name'])) && (isset($_POST['phone'])) && (isset($_POST['message']))) {
+if ((isset($_POST['name'])) && (isset($_POST['phone'])) &&  (isset($_POST['message'])) &&  (!isset($_POST['email']))  ) {
 //    Если в $_POST отправлены поля name, phone и message:
 
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $message = $_POST['message'];
+    $email = $_POST['email'];
+
+
     $formActive = 2;
     if (($name=='') || ($phone=='') || ($message=='')) {
         echo "<meta http-equiv=\"refresh\" content='0; url=$back'>";
         exit();
     }
+
     // Формирование самого письма
     $title = "Новое обращение Best Tour Plan";
     $body = "
@@ -26,7 +30,7 @@ if ((isset($_POST['name'])) && (isset($_POST['phone'])) && (isset($_POST['messag
     <b>Сообщение:</b><br>$message
     ";
 }
-else if ((isset($_POST['email']))) {
+else if ((isset($_POST['email'])) && (!isset($_POST['name']))) {
 //    В $_POST пришёл email на подписку
     $email = $_POST['email'];
     if ($email=='') {
@@ -40,8 +44,29 @@ else if ((isset($_POST['email']))) {
     <br>Ваш e-mail был добавлен в базу рассылки, ( на самом деле нет). Если это были не вы,
     пожалуйста, <a href=$back"."unsubscribe.html>кликните сюда.</a>
     ";
-} else {
-    die("Все входные данные пусты. Скрипт завершается.");
+} else
+if ((isset($_POST['name'])) && (isset($_POST['phone'])) && (isset($_POST['email'])) && (isset($_POST['message']))) {
+//    В $_POST пришёл email на подписку
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
+    $email = $_POST['email'];
+    $formActive = 3;
+    if (($email=='')||($name=='') || ($phone=='') || ($message=='')) {
+        echo "<meta http-equiv=\"refresh\" content='0; url=$back'>";
+        exit();
+    }
+     $title = "Новое обращение Best Tour Plan";
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>Ваша почта:</b> $email<br>
+    <b>Сообщение:</b><br>$message
+    ";
+}
+    else {
+        die("Все входные данные пусты. Скрипт завершается.");
 }
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();

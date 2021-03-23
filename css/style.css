@@ -735,6 +735,22 @@ template {
   width: 100%;
 }
 
+.hotel-back {
+  margin-top: 20px;
+  background-color: #EC1F46;
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.hotel-back:hover {
+  background-color: #0A223D;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .booking {
   font-family: 'Nunito', sans-serif;
   background-color: #0A223D;
