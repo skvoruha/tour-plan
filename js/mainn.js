@@ -104,12 +104,14 @@ $(document).ready(function(){
 
   modalButton.on('click', openModal);
   closeModalButton.on('click', closeModal)
+
   $(this).keydown(function(eventObject){
     if (eventObject.which == 27)
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass('modal__overlay--visible')
     modalDialog.removeClass('modal__dialog--visible')
+    $('html, body').css('overflow', '');
    });
 
 
@@ -118,6 +120,7 @@ $(document).ready(function(){
     var targetModal = $(this).attr('data-href');
     $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible')
     $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible')
+    $('html, body').css('overflow', 'hidden');
   }
    function closeModal(event){
      event.preventDefault()
@@ -125,7 +128,26 @@ $(document).ready(function(){
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass('modal__overlay--visible')
     modalDialog.removeClass('modal__dialog--visible')
+    $('html, body').css('overflow', '');
   }
-
-
+  // обработка форм
+  $('.form').each(function(){
+    $(this).validate({
+    errorClass: "invalid",
+    messages: {
+    name: {
+      required:"Enter a name",
+      minlength:"The name must be at least two letters long"
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    phone: {
+ required: "Phone number required",
+    },
+  },
+  });
+  })
+  $('input[name="phone"]').mask('+7 (000) 000-0000');
 });

@@ -25,7 +25,8 @@
       margin-bottom: 27px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -140,8 +141,9 @@
       flex-basis: 72%
       margin-right: 10%
     &__input
-      flex-basis: 34%
-      margin-right: 30px
+      &-group
+        flex-basis: 34%
+        margin-right: 30px
     &__logo
       grid-row: 1 / 2
       grid-column: span 1
@@ -203,6 +205,10 @@
 
       &-email
         margin-left: 6px
+  .modal
+    &__dialog
+      min-width: 450px
+      padding: 33px 50px
 
 @media (max-width: 768px)
   .container,
@@ -421,7 +427,8 @@
         grid-row: 5
         grid-column: span 2
     &__input
-      flex-basis: 72%
+      &-group
+        flex-basis: 72%
     &__mark
       grid-row: 6
       grid-column: 2
@@ -432,6 +439,10 @@
       &-list
         display: flex
         flex-direction: column
+  .modal
+    &__dialog
+      min-width: 400px
+      padding: 33px 45px
 
 @media (max-width: 576px)
   body
@@ -574,6 +585,12 @@
       justify-self: start
       padding-top: 21px
       margin-bottom: 7px
+  .modal
+    &__dialog
+      min-width: 350px
+      padding: 20px 20px
+    &__input
+      max-height: 40px
 
 @media (min-width: 320px) and (max-width: 480px)
   .container
@@ -822,8 +839,9 @@
         margin-bottom: 21px
         width: 96%
     &__input
-      flex-basis: 100%
-      margin-right: 0
+      &-group
+        flex-basis: 100%
+        margin-right: 0
     &__message
       flex-basis: 100%
       margin-bottom: 16px
@@ -847,3 +865,15 @@
       margin-top: 0
     &__mark
       padding-top: 32px
+  .modal
+    &__dialog
+      min-width: 300px
+      max-width: 70%
+      padding: 20px 20px
+    &__input
+      max-height: 40px
+    &__button
+      min-width: 50%
+      margin-right: 100%
+    &__info
+      margin-left: 0

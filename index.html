@@ -152,11 +152,7 @@
             </p>
           </div>
           <!-- /.hotel-info__text -->
-          <div
-            data-toggle="modal"
-            data-href="#rating-modal"
-            class="rating hotel-info__rating"
-          >
+          <div class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter"
               >4.5/<span class="rating__counter rating__counter-small"
@@ -350,6 +346,8 @@
                   </div>
                   <button
                     class="button packages__button packages__button--mt-20"
+                    data-toggle="modal"
+                    data-href="#booking-modal"
                   >
                     Book Now
                   </button>
@@ -402,7 +400,13 @@
                   <div class="packages__pricetag-old">$ 8,500</div>
                   <div class="packages__pricetag-sale">$ 3,000</div>
                 </div>
-                <button class="button packages__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="button packages__button"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
             <!-- /.packages-crad__seconadary -->
@@ -450,7 +454,13 @@
                   <div class="packages__pricetag-old">$ 10,500</div>
                   <div class="packages__pricetag-sale">$ 9,500</div>
                 </div>
-                <button class="button packages__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="button packages__button"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
@@ -497,7 +507,13 @@
                   <div class="packages__pricetag-old">$ 4,500</div>
                   <div class="packages__pricetag-sale">$ 2,500</div>
                 </div>
-                <button class="button packages__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="button packages__button"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
@@ -544,7 +560,13 @@
                   <div class="packages__pricetag-old">$ 6,500</div>
                   <div class="packages__pricetag-sale">$ 3,500</div>
                 </div>
-                <button class="button packages__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="button packages__button"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
@@ -563,13 +585,14 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="subscribe newsletter__subscribe form"
         >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
+            required
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -712,7 +735,13 @@
               The curious corner <br />
               of chamarel
             </h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -725,7 +754,13 @@
               Gymkhana club golf<br />
               course
             </h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -738,7 +773,13 @@
               Tamarind falls hiking <br />
               trip - full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -751,7 +792,13 @@
               The blue marine discovery<br />
               quest
             </h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
         </div>
@@ -901,19 +948,25 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb35">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 placeholder="Message*"
@@ -958,23 +1011,27 @@
           ><img src="image/close.svg" alt="icon: Close"
         /></a>
         <h3 class="modal__title modal__title--mb35">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           />
           <input
             type="text"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
           <input
             type="text"
             class="input modal__input"
             placeholder="Email*"
+            required
             name="email"
           />
           <textarea
@@ -1038,6 +1095,8 @@
       src="https://api-maps.yandex.ru/2.1/?apikey=46650397-525d-47d6-bf0d-361b292977f1&lang=ru_RU"
       type="text/javascript"
     ></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/mainn.js"></script>
   </body>
 </html>
