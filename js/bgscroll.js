@@ -1,6 +1,5 @@
 (function($) {
   $.fn.bgscroll = function(options) {
-
     var x = $.extend({
       bgpositionx: 50,
       direction: "bottom",

@@ -818,7 +818,9 @@ template {
   width: 347px;
   height: 213px;
   border-radius: 10px;
-  overflow: hidden;
+  padding: 0;
+  background-image: url(../image/map.jpg);
+  background-position: center center;
 }
 
 .newsletter {
@@ -2158,8 +2160,10 @@ template {
   .booking {
     margin-bottom: 20px;
   }
+  .navbar {
+    width: 100%;
+  }
   .navbar-top {
-    width: 95%;
     padding: 19px 0;
   }
   .navbar-top__menu-button {
@@ -2389,7 +2393,6 @@ template {
     margin-right: 4px;
   }
   .navbar-top {
-    width: 100%;
     padding-bottom: 31px;
   }
   .navbar-menu {
