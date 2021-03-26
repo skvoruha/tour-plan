@@ -25,14 +25,22 @@
             />
           </a>
           <form
+            data-aos="fade-right"
+            data-aos-delay="200"
             action="#"
-            class="search navbar__search navbar__search--mobile_hidden"
+            method="POST"
+            class="search navbar__search navbar__search--mobile_hidden form"
           >
-            <input
-              type="text"
-              class="search__input"
-              placeholder="Search Location"
-            />
+            <div class="search__input-block">
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Search Location"
+                name="search"
+                required
+                minlength="3"
+              />
+            </div>
             <button class="search__button">
               <img src="image/search.svg" alt="icon: search" />
             </button>
@@ -73,14 +81,22 @@
             </li>
             <li class="navbar-menu__item navbar-menu__item--mobile_visible">
               <form
+                data-aos="fade-right"
+                data-aos-delay="200"
                 action="#"
-                class="search navbar__search navbar__search--mobile_visible"
+                method="POST"
+                class="search navbar__search navbar__search--mobile_hidden form"
               >
-                <input
-                  type="text"
-                  class="search__input"
-                  placeholder="Search Location"
-                />
+                <div class="search__input-block">
+                  <input
+                    type="text"
+                    class="search__input"
+                    placeholder="Search Location"
+                    name="search"
+                    required
+                    minlength="3"
+                  />
+                </div>
                 <button class="search__button">
                   <img src="image/search.svg" alt="icon: search" />
                 </button>
@@ -297,19 +313,27 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb35">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength="17"
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 placeholder="Message*"
@@ -353,6 +377,9 @@
       src="https://api-maps.yandex.ru/2.1/?apikey=46650397-525d-47d6-bf0d-361b292977f1&lang=ru_RU"
       type="text/javascript"
     ></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/mainn.js"></script>
   </body>
 </html>

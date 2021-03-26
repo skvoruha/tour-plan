@@ -40,6 +40,7 @@
                 placeholder="Search Location"
                 name="search"
                 required
+                minlength="3"
               />
             </div>
             <button class="search__button">
@@ -995,6 +996,7 @@
                   placeholder="Your Full Name*"
                   name="name"
                   required
+                  minlength="2"
                 />
               </div>
               <div class="footer__input-group">
@@ -1004,6 +1006,7 @@
                   placeholder="Phone Number*"
                   name="phone"
                   required
+                  minlength="17"
                 />
               </div>
               <textarea
@@ -1060,14 +1063,15 @@
             minlength="2"
           />
           <input
-            type="text"
+            type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
             required
+            minlength="17"
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             required
@@ -1087,46 +1091,6 @@
     </div>
     <!-- /.modal -->
 
-    <div class="modal" id="rating-modal">
-      <div class="modal__overlay"></div>
-      <!-- /.modal__overlay -->
-      <div class="modal__dialog">
-        <a href="#" class="modal__close"
-          ><img src="image/close.svg" alt="icon: Close"
-        /></a>
-        <h3 class="modal__title modal__title--mb35">Send us a feedback</h3>
-        <form action="send.php" method="POST" class="modal__form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Your Full Name*"
-            name="name"
-          />
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Phone Number*"
-            name="phone"
-          />
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-          />
-          <textarea
-            class="message modal__message"
-            placeholder="Message*"
-            name="message"
-          ></textarea>
-
-          <button class="button modal__button" type="submit">Send</button>
-          <span class="modal__info">* Required Fields</span>
-        </form>
-      </div>
-      <!-- /.modal__dialog -->
-    </div>
-    <!-- /.modal -->
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="js/bgscroll.js"></script>
     <script src="js/swiper-bundle.min.js"></script>

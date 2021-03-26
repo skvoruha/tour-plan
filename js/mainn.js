@@ -145,6 +145,11 @@ $(document).ready(function(){
     },
     phone: {
  required: "Phone number required",
+ minlength:"Your number is too short for our region"
+    },
+    message: {
+      required: "empty request",
+      minlength: "enter at least 3 characters"
     },
   },
   });
