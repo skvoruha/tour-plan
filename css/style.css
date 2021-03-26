@@ -52,6 +52,16 @@ body {
   border-bottom: 1px solid #EC1F46;
 }
 
+button:hover {
+  background-color: #DBAE24;
+  transition: 0.5s;
+}
+
+a:hover {
+  background-color: #9FC3DF;
+  transition: 1.5s;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -903,6 +913,7 @@ template {
   color: #fff;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1192,6 +1203,7 @@ template {
 }
 
 .packages-card__seconadary {
+  overflow-y: auto;
   min-height: 250px;
   background-color: #0A223D;
   color: #fff;
@@ -1239,7 +1251,7 @@ template {
 
 .packages__price {
   display: flex;
-  height: 60px;
+  min-height: 60px;
 }
 
 .packages__pricetag {
@@ -1248,6 +1260,7 @@ template {
 }
 
 .packages__pricetag-old {
+  max-width: 90px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1257,6 +1270,7 @@ template {
 }
 
 .packages__pricetag-sale {
+  max-width: 90px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -1272,7 +1286,8 @@ template {
   background-color: #EC1F46;
   border-radius: 4px;
   min-height: 39px;
-  max-height: 39px;
+  max-height: max-content;
+  max-width: 150px;
   min-width: 120px;
   padding: 8px 18px;
   color: #fff;
@@ -1640,6 +1655,9 @@ template {
   }
   .packages__per-room {
     margin-bottom: 24px;
+  }
+  .packages__main-info {
+    overflow-y: auto;
   }
   .per-room-seconadary {
     margin-bottom: 27px;
@@ -2155,6 +2173,7 @@ template {
   }
   .modal__message {
     height: 90px;
+    font-size: 75%;
   }
 }
 
@@ -2184,7 +2203,7 @@ template {
     height: 30px;
   }
   .navbar-bottom--visible {
-    top: 68px;
+    top: 50px;
   }
   .search__input {
     width: 300px;
