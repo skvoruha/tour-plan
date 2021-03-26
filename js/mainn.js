@@ -33,56 +33,56 @@ $(document).ready(function(){
       prevEl: '.reviews-slider__button--prev',
     },
   });
-  ymaps.ready(init);
-  function init(){
-          var myMap = new ymaps.Map("map", {
-              center: [7.8907326148831505,98.29466843709695],
-              zoom: 16
-          });
-              // Создаем геообъект с типом геометрии "Точка".
-          myGeoObject = new ymaps.GeoObject({
-              // Опции.
-              // Иконка метки будет растягиваться под размер ее содержимого.
-              preset: 'islands#blackStretchyIcon',
-              // Метку можно перемещать.
-              draggable: true
-          }),
-          myPieChart = new ymaps.Placemark([
-            7.8907326148831505,98.29466843709695
-          ], {
-              // Данные для построения диаграммы.
-              data: [
-                  {weight: 8, color: '#0E4779'},
-                  {weight: 6, color: '#1E98FF'},
-                  {weight: 4, color: '#82CDFF'}
-              ],
-              iconCaption: "Диаграмма"
-          }, {
-              // Зададим произвольный макет метки.
-              iconLayout: 'default#pieChart',
-              // Радиус диаграммы в пикселях.
-              iconPieChartRadius: 30,
-              // Радиус центральной части макета.
-              iconPieChartCoreRadius: 10,
-              // Стиль заливки центральной части.
-              iconPieChartCoreFillStyle: '#ffffff',
-              // Cтиль линий-разделителей секторов и внешней обводки диаграммы.
-              iconPieChartStrokeStyle: '#ffffff',
-              // Ширина линий-разделителей секторов и внешней обводки диаграммы.
-              iconPieChartStrokeWidth: 3,
-              // Максимальная ширина подписи метки.
-              iconPieChartCaptionMaxWidth: 200
-          });
-          myMap.geoObjects
-        .add(myGeoObject)
-        .add(new ymaps.Placemark([7.8907326148831505, 98.29466843709695], {
-              balloonContent: '<strong>Double Tree by Hilton Phuket Banthai Resort</strong><br> Гостиница',
-              iconCaption: 'Hilton Phuket'
-          }, {
-              preset: 'islands#greenDotIconWithCaption'
-          }))
+  // ymaps.ready(init);
+  // function init(){
+  //         var myMap = new ymaps.Map("map", {
+  //             center: [7.8907326148831505,98.29466843709695],
+  //             zoom: 16
+  //         });
+  //             // Создаем геообъект с типом геометрии "Точка".
+  //         myGeoObject = new ymaps.GeoObject({
+  //             // Опции.
+  //             // Иконка метки будет растягиваться под размер ее содержимого.
+  //             preset: 'islands#blackStretchyIcon',
+  //             // Метку можно перемещать.
+  //             draggable: true
+  //         }),
+  //         myPieChart = new ymaps.Placemark([
+  //           7.8907326148831505,98.29466843709695
+  //         ], {
+  //             // Данные для построения диаграммы.
+  //             data: [
+  //                 {weight: 8, color: '#0E4779'},
+  //                 {weight: 6, color: '#1E98FF'},
+  //                 {weight: 4, color: '#82CDFF'}
+  //             ],
+  //             iconCaption: "Диаграмма"
+  //         }, {
+  //             // Зададим произвольный макет метки.
+  //             iconLayout: 'default#pieChart',
+  //             // Радиус диаграммы в пикселях.
+  //             iconPieChartRadius: 30,
+  //             // Радиус центральной части макета.
+  //             iconPieChartCoreRadius: 10,
+  //             // Стиль заливки центральной части.
+  //             iconPieChartCoreFillStyle: '#ffffff',
+  //             // Cтиль линий-разделителей секторов и внешней обводки диаграммы.
+  //             iconPieChartStrokeStyle: '#ffffff',
+  //             // Ширина линий-разделителей секторов и внешней обводки диаграммы.
+  //             iconPieChartStrokeWidth: 3,
+  //             // Максимальная ширина подписи метки.
+  //             iconPieChartCaptionMaxWidth: 200
+  //         });
+  //         myMap.geoObjects
+  //       .add(myGeoObject)
+  //       .add(new ymaps.Placemark([7.8907326148831505, 98.29466843709695], {
+  //             balloonContent: '<strong>Double Tree by Hilton Phuket Banthai Resort</strong><br> Гостиница',
+  //             iconCaption: 'Hilton Phuket'
+  //         }, {
+  //             preset: 'islands#greenDotIconWithCaption'
+  //         }))
 
-      }
+  //     }
   var oneMoblie = 0
 
   var menuButton = $(".menu-button");
