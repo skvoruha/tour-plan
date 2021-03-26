@@ -133,7 +133,7 @@ $(document).ready(function(){
   // обработка форм
   $('.form').each(function(){
     $(this).validate({
-    errorClass: "invalid",
+    errorClass: "invalid animated headShake",
     messages: {
     name: {
       required:"Enter a name",
@@ -150,4 +150,5 @@ $(document).ready(function(){
   });
   })
   $('input[name="phone"]').mask('+7 (000) 000-0000');
+  AOS.init();
 });
