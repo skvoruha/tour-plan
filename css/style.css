@@ -1558,9 +1558,13 @@ template {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
+  max-height: 500px;
+  height: 78vh;
 }
 
 .modal__dialog--visible {
+  margin-top: 20px;
+  margin-bottom: 20px;
   overflow-y: auto;
   max-height: 100%;
   visibility: visible;
@@ -2144,6 +2148,13 @@ template {
   .modal__dialog {
     min-width: 400px;
     padding: 33px 45px;
+  }
+  .modal__input {
+    font-size: 75%;
+    height: 40px;
+  }
+  .modal__message {
+    height: 90px;
   }
 }
 
