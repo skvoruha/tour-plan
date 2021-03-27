@@ -1604,7 +1604,7 @@ template {
   opacity: 0;
   transition: opacity 0.2s;
   max-height: 500px;
-  height: 70vh;
+  height: 75vh;
 }
 
 .modal__dialog--visible {
@@ -1638,12 +1638,20 @@ template {
 .modal__input {
   width: 100%;
   margin-top: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
   margin-top: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__button {
@@ -2465,8 +2473,8 @@ template {
     margin-right: 4px;
   }
   .navbar-top {
-    padding-bottom: 31px;
-    padding-top: 38px;
+    padding-bottom: 20px;
+    padding-top: 23px;
   }
   .navbar-menu {
     display: flex;
@@ -2761,6 +2769,9 @@ template {
   }
   .modal__info {
     margin-left: 0;
+  }
+  .breadcrumb-list {
+    padding-top: 11px;
   }
 }
 /*# sourceMappingURL=style.css.map */
