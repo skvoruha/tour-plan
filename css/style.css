@@ -63,6 +63,16 @@ a:hover {
   transition: 1.5s;
 }
 
+a.logo:hover {
+  background-color: #fff;
+  transition: none;
+}
+
+a.footer__logo:hover {
+  background-color: #0A223D;
+  transition: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -2382,6 +2392,18 @@ template {
   .modal__input {
     max-height: 40px;
   }
+  .activities__card--or1 {
+    order: 1;
+  }
+  .activities__card--or2 {
+    order: 2;
+  }
+  .activities__card--or3 {
+    order: 3;
+  }
+  .activities__card--or4 {
+    order: 4;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -2444,6 +2466,7 @@ template {
   }
   .navbar-top {
     padding-bottom: 31px;
+    padding-top: 38px;
   }
   .navbar-menu {
     display: flex;

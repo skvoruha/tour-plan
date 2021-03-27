@@ -162,7 +162,7 @@ $(document).ready(function(){
     },
     email: {
       required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com"
+      email: "The E-mail field does not match name@domain.ru"
     },
     phone: {
      required: "Phone number required",
