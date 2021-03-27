@@ -165,8 +165,8 @@ $(document).ready(function(){
       email: "Your email address must be in the format of name@domain.com"
     },
     phone: {
- required: "Phone number required",
- minlength:"Your number is too short for our region"
+     required: "Phone number required",
+    minlength:"Your number is too short for our region"
     },
     message: {
       required: "empty request",

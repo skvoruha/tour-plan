@@ -21,12 +21,15 @@
       align-items: center
       min-width: 83px
       justify-content: space-between
-
     &-network
       display: flex
       align-content: start
       grid-row: 2 / 4
       grid-column: span 2
+    &--bgc
+      &:hover
+        background-color: red
+
   &__contact
     &-details
       grid-column: span 2
@@ -74,6 +77,11 @@
       margin-bottom: 14px
     &--mb18
       margin-bottom: 18px
+    &--lk
+      color: $footer-text-color
+      text-decoration: none
+      &:hover
+        color: $dark
   &__icon
     margin-left: 8px
     &-wrapper
