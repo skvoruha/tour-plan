@@ -1,13 +1,4 @@
 $(document).ready(function(){
-  $(window).scroll(function(){
-    $('.newsletter').bgscroll({
-      direction: 'top', // направление bottom или top
-      bgpositionx: 50, // x позиция фонового изображения, от 0 до 100, размерность в %, 50 - означает по центру
-      debug: false, // Режим отладки
-      min:0, // минимальное положение (в %) на которое может смещаться фон
-      max:100 // максимальное положение (в %) на которое может смещаться фон
-    });
-  })
   var hotelSlider = new Swiper('.hotel-slider', {
     // Optional parameters
     loop: true,
@@ -83,27 +74,7 @@ $(document).ready(function(){
   //         }))
 
   //     }
-  let map_container = document.getElementById('map_container');
-    let options_map = {
-        once: true,
-        passive: true,
-        capture: true
-    };
-    map_container.addEventListener('click', start_lazy_map, options_map);
-    map_container.addEventListener('mouseover', start_lazy_map, options_map);
-    map_container.addEventListener('touchstart', start_lazy_map, options_map);
-    map_container.addEventListener('touchmove', start_lazy_map, options_map);
 
-    let map_loaded = false;
-    function start_lazy_map() {
-        if (!map_loaded) {
-            let map_block = document.getElementById('ymap_lazy');
-            map_loaded = true;
-            map_block.setAttribute('src', map_block.getAttribute('data-src'));
-            map_block.removeAttribute('data-src');
-            console.log('YMAP LOADED');
-        }
-    }
   var oneMoblie = 0
 
   var menuButton = $(".menu-button");
@@ -127,28 +98,26 @@ $(document).ready(function(){
   closeModalButton.on('click', closeModal)
 
   $(this).keydown(function(eventObject){
-    if (eventObject.which == 27)
+    if (eventObject.which == 27){
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass('modal__overlay--visible')
-    modalDialog.removeClass('modal__dialog--visible')
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
     $('html, body').css('overflow', '');
+    }
    });
-
-
-
   function openModal(){
     var targetModal = $(this).attr('data-href');
-    $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible')
-    $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible')
+    $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible');
+    $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible');
     $('html, body').css('overflow', 'hidden');
   }
    function closeModal(event){
      event.preventDefault()
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass('modal__overlay--visible')
-    modalDialog.removeClass('modal__dialog--visible')
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
     $('html, body').css('overflow', '');
   }
   // обработка форм

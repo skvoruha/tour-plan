@@ -61,16 +61,19 @@ button:hover {
 a:hover {
   background-color: #9FC3DF;
   transition: 1.5s;
+  cursor: pointer;
 }
 
 a.logo:hover {
   background-color: #fff;
   transition: none;
+  cursor: pointer;
 }
 
 a.footer__logo:hover {
   background-color: #0A223D;
   transition: none;
+  cursor: pointer;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1220,7 +1223,6 @@ template {
 }
 
 .packages-card__seconadary {
-  overflow-y: auto;
   min-height: 250px;
   background-color: #0A223D;
   color: #fff;
@@ -1455,7 +1457,7 @@ template {
 }
 
 .footer__item--mb18 {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .footer__item--lk {
@@ -1484,7 +1486,7 @@ template {
 }
 
 .footer__icon-email {
-  padding-top: 8px;
+  padding-top: 6px;
 }
 
 .footer__text {
@@ -2333,6 +2335,9 @@ template {
     min-width: 100px;
     font-size: 14px;
     margin-top: 0;
+    font-size: 12px;
+    height: 34px;
+    min-height: 30px;
   }
   .packages__button--mt-20 {
     min-width: 105px;
